@@ -10,7 +10,7 @@ import numpy as np  # unused import
 
 test = "this line is too long ................................................................................................................................................................................................................................"
 just_wrong = [1,    2, 3,
-              5   ]
+              5  ]
 
 class Importance(Enum):
     """A definition of the valid importance levels for a given check function."""
