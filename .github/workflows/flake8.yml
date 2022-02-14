@@ -15,3 +15,5 @@ jobs:
           python-version: 3.8
       - name: flake8
         uses: py-actions/flake8@v2
+        with:
+          config: path/to/flake8.ini
