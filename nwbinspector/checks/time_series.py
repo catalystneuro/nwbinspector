@@ -7,6 +7,10 @@ from pynwb import TimeSeries
 from ..register_checks import register_check, Importance, Severity, InspectorMessage
 from ..utils import check_regular_series
 
+import numpy as np # unused and bad comment
+
+test_long_line = "................................................................................................................................................................................."
+
 
 @register_check(importance=Importance.BEST_PRACTICE_VIOLATION, neurodata_type=TimeSeries)
 def check_regular_timestamps(
