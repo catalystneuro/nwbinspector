@@ -16,4 +16,4 @@ jobs:
       - name: flake8
         run: |
           pip install pyproject-flake8
-          flake8 .
+          pflake8 .
