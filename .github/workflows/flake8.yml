@@ -18,3 +18,5 @@ jobs:
         with:
           plugins: flake8-spellcheck
           config: pyproject.toml
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
