@@ -15,5 +15,5 @@ jobs:
           python-version: 3.8
       - name: flake8
         run: |
-          pip install pyproject-flake8
-          pflake8 .
+          pip install flake8
+          flake8 .
