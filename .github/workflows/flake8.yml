@@ -14,6 +14,7 @@ jobs:
         with:
           python-version: 3.8
       - name: flake8
-        uses: py-actions/flake8@v2
+        uses: julianwachholz/flake8-action@v2
         with:
-          config: path/to/flake8.ini
+          plugins: flake8-spellcheck
+          config: pyproject.toml
