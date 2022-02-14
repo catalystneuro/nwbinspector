@@ -16,7 +16,6 @@ jobs:
       - name: flake8
         uses: julianwachholz/flake8-action@v2
         with:
-          plugins: flake8-spellcheck
           config: pyproject.toml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
