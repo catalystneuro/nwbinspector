@@ -15,6 +15,3 @@ jobs:
           python-version: 3.8
       - name: flake8
         uses: py-actions/flake8@v2
-        with:
-          max-line-length: 120
-          exclude: "nwbinspector/__init__.py"
