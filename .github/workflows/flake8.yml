@@ -14,8 +14,6 @@ jobs:
         with:
           python-version: 3.8
       - name: flake8
-        uses: julianwachholz/flake8-action@v2
-        with:
-          config: pyproject.toml
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          pip install flake8
+          flake8 --exit-zero .
